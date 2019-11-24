@@ -1,0 +1,177 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.watch-canvas {
+  position: relative;
+  background-color: black;
+  width: 630px;
+  height: 630px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.bezel {
+  position: relative;
+  box-sizing: content-box;
+  background-color: grey;
+  width: 624px;
+  height: 624px;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+  z-index: 1;
+}
+.bezel-edge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: content-box;
+  background-color: #272727;
+  width: 618px;
+  height: 618px;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+}
+.bezel-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: content-box;
+  background-color: black;
+  width: 540px;
+  height: 540px;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+}
+.bezel-inner-edge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: content-box;
+  background-color: black;
+  width: 534px;
+  height: 534px;
+  border-radius: 50%;
+  border: 1px solid lightgrey;
+}
+
+.calendar {
+  position: absolute;
+  right: 130px;
+  width: 130px;
+  height: 64px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  z-index: 1;
+}
+.calendar-day {
+  box-sizing: border-box;
+  width: 75px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid #a7a7a7;
+  border-right-width: 4px;
+}
+.calendar-date {
+  box-sizing: border-box;
+  width: 55px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid #a7a7a7;
+  border-left-width: 4px;
+}
+
+.hands {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.hands-center {
+  z-index: 1;
+  position: absolute;
+  box-sizing: content-box;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: grey;
+  border: 5px solid silver;
+}
+.hands-center-dot {
+  z-index: 1;
+  position: absolute;
+  box-sizing: content-box;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #4d4d4d;
+}
+.hands-second {
+  box-sizing: content-box;
+  z-index: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 244px;
+  background-color: silver;
+  border-radius: 4px;
+}
+.hands-second:after {
+  content: "";
+  width: 4px;
+  height: 70px;
+  background-color: red;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hands-second-bottom {
+  box-sizing: content-box;
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 84px solid silver;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  width: 5px;
+}
+.hands-second-wrapper {
+  position: absolute;
+  background-color: transparent;
+  height: 490px;
+  width: 490px;
+  border-radius: 50%;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/*# sourceMappingURL=style.css.map */
