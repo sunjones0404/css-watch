@@ -1,18 +1,26 @@
-const secondHandWrapper = document.querySelector('.hands-second-wrapper');
-const minuteHandWrapper = document.querySelector('.hands-minute-wrapper');
+function updateTime() {
+  const now = new Date();
+  const sec = now.getSeconds();
+  const min = now.getMinutes();
+  const hour = (now.getHours() % 12) + min/60;
+  const secAngle = sec * 6;
+  const minAngle = min * 6;
+  const hourAngle = hour * 30;
 
-let secondInterval = 0;
-setInterval(() => {
-  secondInterval += 6;
-  secondHandWrapper.style.transform = `rotate(${secondInterval}deg)`;
-}, 1000);
+  const secHand = document.querySelector('.hands-second-wrapper');
+  const minHand = document.querySelector('.hands-minute-wrapper');
+  const hourHand = document.querySelector(".hands-hour-wrapper");
 
-let minuteInterval = 0;
-setInterval(() => {
-  minuteInterval += 6;
-  minuteHandWrapper.style.transform = `rotate(${minuteInterval}deg)`;
-}, 60000);
+  secHand.style.transform = `rotate(${secAngle}deg)`;
+  minHand.style.transform = `rotate(${minAngle}deg)`;
+  hourHand.style.transform = `rotate(${hourAngle}deg)`;
 
+  setTimeout(updateTime, 1000);
+}
+
+updateTime();
+
+// Calendar
 const day = document.querySelector('.calendar-day');
 const date = document.querySelector('.calendar-date');
 const weekday = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];

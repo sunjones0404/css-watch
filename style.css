@@ -1,6 +1,8 @@
 html,
 body {
-  background-color: slategrey;
+  background: #232526;
+  background: -webkit-linear-gradient(to right bottom, #414345, #232526);
+  background: linear-gradient(to right bottom, #414345, #232526);
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
@@ -106,6 +108,83 @@ body {
   opacity: 0.7;
   z-index: 1;
 }
+.face .tag-logo-model {
+  position: absolute;
+  right: 132px;
+  top: 233px;
+  color: #cccccc;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  z-index: 1;
+}
+.face .number {
+  position: absolute;
+  font-family: "Exo", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  background: #f7f7f7;
+  background: -moz-linear-gradient(top, #f7f7f7 0%, #cccccc 50%, #aaaaaa 51%, #333333 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #f7f7f7), color-stop(50%, #cccccc), color-stop(51%, #aaaaaa), color-stop(100%, #333333));
+  background: -webkit-linear-gradient(top, #f7f7f7 0%, #cccccc 50%, #aaaaaa 51%, #333333 100%);
+  background: -o-linear-gradient(top, #f7f7f7 0%, #cccccc 50%, #aaaaaa 51%, #333333 100%);
+  background: -ms-linear-gradient(top, #f7f7f7 0%, #cccccc 50%, #aaaaaa 51%, #333333 100%);
+  background: linear-gradient(to bottom, #f7f7f7 0%, #cccccc 50%, #aaaaaa 51%, #333333 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f7f7f7", endColorstr="#333333", GradientType=0 );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.face .number-five {
+  top: 50px;
+  right: 180px;
+}
+.face .number-ten {
+  top: 130px;
+  right: 105px;
+}
+.face .number-fifteen {
+  top: 234px;
+  right: 75px;
+}
+.face .number-twenty {
+  bottom: 130px;
+  right: 105px;
+}
+.face .number-twenty-five {
+  bottom: 50px;
+  right: 180px;
+}
+.face .number-thirty {
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.face .number-thirty-five {
+  bottom: 50px;
+  left: 180px;
+}
+.face .number-forty {
+  bottom: 130px;
+  left: 105px;
+}
+.face .number-forty-five {
+  top: 234px;
+  left: 75px;
+}
+.face .number-fifty {
+  top: 130px;
+  left: 105px;
+}
+.face .number-fifty-five {
+  top: 50px;
+  left: 180px;
+}
+.face .number-sixty {
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 3.5rem;
+}
 
 .calendar {
   position: absolute;
@@ -205,7 +284,6 @@ body {
   height: 490px;
   width: 490px;
   border-radius: 50%;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   z-index: 7;
 }
 .hands-minute {
@@ -216,7 +294,7 @@ body {
   transform: translateX(-50%);
   width: 8px;
   height: 234px;
-  background-color: #747474;
+  background-color: silver;
 }
 .hands-minute:after {
   content: "";
@@ -226,7 +304,7 @@ body {
   height: 0;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
-  border-bottom: 4px solid #747474;
+  border-bottom: 4px solid silver;
 }
 .hands-minute-wrapper {
   position: absolute;
@@ -234,7 +312,33 @@ body {
   height: 490px;
   width: 490px;
   border-radius: 50%;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.hands-hour {
+  box-sizing: content-box;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 150px;
+  background-color: silver;
+}
+.hands-hour:after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid silver;
+}
+.hands-hour-wrapper {
+  position: absolute;
+  background-color: transparent;
+  height: 490px;
+  width: 490px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
