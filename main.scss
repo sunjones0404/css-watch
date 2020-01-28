@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: grey;
+  background-color: slategrey;
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
@@ -15,13 +15,16 @@ body {
 .watch {
   &-canvas {
     position: relative;
-    background-color: black;
+    background: #111111;
+    background: radial-gradient(ellipse farthest-corner at left top, #cccccc 0%, #666666 8%, #444444 30%, #666666 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at right bottom, #FFFFFF 0%, #ffffff 8%, #cccccc 25%, #222222 62.5%, #5d4a1f 100%);
     width: 630px;
     height: 630px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: scale(.8)
     
   }
 }
@@ -29,11 +32,12 @@ body {
 .bezel {
   position: relative;
   box-sizing: content-box;
-  background-color: grey;
-  width: 624px;
-  height: 624px;
+  background: #111111;
+    background: radial-gradient(ellipse farthest-corner at left top, #cccccc 0%, #333333 8%, #222222 30%, #333333 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at right bottom, #444444 0%, #333333 8%, #444444 25%, #222222 62.5%, #5d4a1f 100%);
+  width: 628px;
+  height: 628px;
   border-radius: 50%;
-  border: 1px solid lightgrey;
   
 
   &-edge {
@@ -42,11 +46,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     box-sizing: content-box;
-    background-color: darken(grey, 35%);
+    background: #111111;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #cccccc 0%, #111111 8%, #000000 30%, #111111 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #ffffff 8%, #cccccc 25%, #222222 62.5%, #5d4a1f 100%);
     width: 618px;
     height: 618px;
     border-radius: 50%;
-    border: 1px solid lightgrey;
   }
 
   &-inner {
@@ -55,11 +60,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     box-sizing: content-box;
-    background-color: black;
+    background: #111111;
+    background: radial-gradient(ellipse farthest-corner at left top, #cccccc 0%, #666666 8%, #444444 30%, #666666 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at right bottom, #FFFFFF 0%, #ffffff 8%, #cccccc 25%, #222222 62.5%, #5d4a1f 100%);
     width: 540px;
     height: 540px;
     border-radius: 50%;
-    border: 1px solid lightgrey;
 
     &-edge {
       position: absolute;
@@ -67,12 +73,53 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
       box-sizing: content-box;
-      background-color: black;
+      background: black;
+      background-size: cover;
       width: 534px;
       height: 534px;
       border-radius: 50%;
-      border: 1px solid lightgrey;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-sizing: content-box;
+        background: url('bg-texture.jpg');
+        background-size: cover;
+        width: 534px;
+        height: 534px;
+        border-radius: 50%;
+        opacity: .2;
+      }
     }
+  }
+}
+
+.face {
+  &-seconds {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  &-miliseconds {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .tag-logo {
+    position: absolute;
+    right: 170px;
+    top: 200px;
+    width: 50px;
+    filter: saturate(0);
+    opacity: .7;
+    z-index: 1;
   }
 }
 
