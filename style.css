@@ -17,7 +17,7 @@ body {
 .watch-canvas {
   position: relative;
   background: #111111;
-  background: radial-gradient(ellipse farthest-corner at left top, #cccccc 0%, #666666 8%, #444444 30%, #666666 40%, transparent 80%), radial-gradient(ellipse farthest-corner at right bottom, #FFFFFF 0%, #ffffff 8%, #cccccc 25%, #222222 62.5%, #5d4a1f 100%);
+  background: radial-gradient(ellipse farthest-corner at left top, #cccccc 0%, #666666 8%, #444444 30%, #666666 40%, transparent 80%), radial-gradient(ellipse farthest-corner at right bottom, #ffffff 0%, #ffffff 8%, #cccccc 25%, #222222 62.5%, #5d4a1f 100%);
   width: 630px;
   height: 630px;
   border-radius: 50%;
@@ -43,7 +43,7 @@ body {
   transform: translate(-50%, -50%);
   box-sizing: content-box;
   background: #111111;
-  background: radial-gradient(ellipse farthest-corner at right bottom, #cccccc 0%, #111111 8%, #000000 30%, #111111 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #ffffff 8%, #cccccc 25%, #222222 62.5%, #5d4a1f 100%);
+  background: radial-gradient(ellipse farthest-corner at right bottom, #cccccc 0%, #111111 8%, #000000 30%, #111111 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffff 8%, #cccccc 25%, #222222 62.5%, #5d4a1f 100%);
   width: 618px;
   height: 618px;
   border-radius: 50%;
@@ -55,7 +55,7 @@ body {
   transform: translate(-50%, -50%);
   box-sizing: content-box;
   background: #111111;
-  background: radial-gradient(ellipse farthest-corner at left top, #cccccc 0%, #666666 8%, #444444 30%, #666666 40%, transparent 80%), radial-gradient(ellipse farthest-corner at right bottom, #FFFFFF 0%, #ffffff 8%, #cccccc 25%, #222222 62.5%, #5d4a1f 100%);
+  background: radial-gradient(ellipse farthest-corner at left top, #cccccc 0%, #666666 8%, #444444 30%, #666666 40%, transparent 80%), radial-gradient(ellipse farthest-corner at right bottom, #ffffff 0%, #ffffff 8%, #cccccc 25%, #222222 62.5%, #5d4a1f 100%);
   width: 540px;
   height: 540px;
   border-radius: 50%;
@@ -79,7 +79,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: content-box;
-  background: url("bg-texture.jpg");
+  background: url("img/bg-texture.jpg");
   background-size: cover;
   width: 534px;
   height: 534px;
